@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Management</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>Add New User</h1>
+        <form action="SaveServlet" method="post">
+            <table>
+                <tr><td>Username:</td><td><input type="text" name="name"/></td></tr>
+                <tr><td>Password:</td><td><input type="password" name="password"/></td></tr>
+                        <tr><td>Role:</td><td>
+                                <select name="role" style="width:150px">
+                                    <option>admin</option>
+                                    <option>user</option>
+                                </select>
+                            </td></tr>
+                        <tr><td colspan="2"><input type="submit" value="Save User"/></td></tr>
+            </table>
+        </form>
+        <br/>
+        <a href="ViewServlet">view users</a>
+    </body>
+</html>
